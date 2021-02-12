@@ -12,6 +12,6 @@ public class MainVerticle extends AbstractVerticle {
     HttpServer server = vertx.createHttpServer();
     Router shorts = new Shorts(vertx);
 
-    server.requestHandler(shorts).listen(8888);
+    server.requestHandler(shorts).listen(80);
   }
 }
